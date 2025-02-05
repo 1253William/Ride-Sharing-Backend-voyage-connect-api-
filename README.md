@@ -1,5 +1,5 @@
 # Ride-Sharing-Backend(voyage-connect)
-# voyage-connect-api
+## voyage-connect-api
 
 Voyage-Connect is a real world simulation of a  modern, scalable Node.js/Express backend API for ride-sharing platforms. Built with MongoDB and JWT authentication.
 
@@ -32,31 +32,31 @@ Voyage-Connect is a real world simulation of a  modern, scalable Node.js/Express
 
 ## 📦 Installation
 
-1. Clone the repository:
-```bash
+1. Clone the repository
+```
 git clone https://github.com/yourusername/voyage-connect-api.git
 cd voyage-connect-api
 ```
 
-2. Install dependencies:
-```bash
+2. Install dependencies
+```
 npm install
 ```
 
-3. Set up environment variables:
-```bash
+3. Set up environment variables
+```
 cp .env.example .env
 # Edit .env with your configuration
 ```
 
-4. Start the development server:
-```bash
+4. Start the development server
+```
 npm run dev
 ```
 
 ## 🔧 Configuration
 
-Create a `.env` file in the root directory:
+Create a `.env` file in the root directory
 
 ```env
 PORT=3000
@@ -67,12 +67,12 @@ NODE_ENV=development
 
 ## 📚 API Documentation
 
-Once the server is running, access the Swagger documentation at:
+Once the server is running, access the Swagger documentation at
 ```
 http://localhost:3000/api-docs
 ```
 
-Key endpoints:
+Key endpoints
 - `POST /api/auth/register` - User registration
 - `POST /api/auth/login` - User authentication
 - `POST /api/rides` - Create a new ride
@@ -80,31 +80,21 @@ Key endpoints:
 - `GET /api/rides/history` - Get ride history
 - `GET /api/analytics/metrics` - Get platform metrics
 
-## 🧪 Testing
-
-Run the test suite:
-```bash
-npm test
-```
-
-Run tests with coverage:
-```bash
-npm run test:coverage
 ```
 
 ## 🚀 Deployment
 
-1. Build the Docker image:
-```bash
+1. Build the Docker image
+```
 docker build -t voyage-connect-api .
 ```
 
 2. Run the container:
-```bash
+```
 docker run -p 3000:3000 voyage-connect-api
 ```
 
-## 📈 Roadmap for Advanced Features:
+## 📈 Roadmap for Advanced Features
 
 - [ ] Real-time driver tracking
 - [ ] Payment integration

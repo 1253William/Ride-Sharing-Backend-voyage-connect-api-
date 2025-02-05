@@ -114,9 +114,4 @@ docker run -p 3000:3000 voyage-connect-api
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👥 Author
-
-- Parwar William Ofosu (@1253William)
-
-## 🙏 Acknowledgments
 

@@ -1,42 +1,36 @@
-const express = require("express");
-const mongoose = require("mongoose");
-const cors = require("cors");
-const morgan = require("morgan");
+const express = require('express')
+const mongoose = require('mongoose')
+const cors = require('cors')
+const morgan = require('morgan')
 
-require("dotenv").config();
+require('dotenv').config()
 
-const app = express();
+const app = express()
 
 // Middleware
-app.use(cors());
-app.use(morgan("dev"));
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(cors())
+app.use(morgan('dev'))
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
 
 // Database connection
 mongoose
   .connect(process.env.MONGODB_URI)
-  .then(() => console.log("Connected to MongoDB Successfully"))
-  .catch((err) => console.error("MongoDB connection error:", err));
+  .then(() => console.log('Connected to MongoDB Successfully'))
+  .catch((err) => console.error('MongoDB connection error:', err))
 
 // Basic route
-app.get("/", (req, res) => {
-  res.json({ message: "Welcome to Voyage Connect API" });
-});
+app.get('/', (req, res) => {
+  res.json({ message: 'Welcome to Voyage Connect API' })
+})
 
 // Error handling middleware
 app.use((err, req, res, next) => {
-  console.error(err.stack);
-  res.status(500).json({ message: "Something went wrong!" });
-});
+  console.error(err.stack)
+  res.status(500).json({ message: 'Something went wrong!' })
+})
 
-const PORT = process.env.PORT || 5000;
-
-// Only start the server if this file is run directly
-if (require.main === module) {
-  app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
-  });
-}
-
-module.exports = app;
+const PORT = process.env.PORT || 5000
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`)
+})

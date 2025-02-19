@@ -2,37 +2,28 @@
 
 ## voyage-connect-api
 
-Voyage-Connect is a real-world simulation of a modern, scalable Node.js/Express backend API for ride-sharing platforms. Built with MongoDB and JWT authentication.
+Voyage-Connect is a real-world simulation of a modern, scalable Node.js/Express backend API for ride-sharing platforms.
 
 ## 🚀 General Features
 
 - **Authentication & Authorization**
 
-  - JWT-based authentication
-  - Role-based access control (Riders & Drivers)
-  - Secure password hashing
-
-- **Ride Management**
-
-  - Real-time ride booking
-  - Dynamic pricing based on demand
-  - Comprehensive ride status tracking
-  - Ride history and analytics
-
-- **Advanced Features**
-  - MongoDB aggregation for analytics
-  - API documentation with Swagger
-  - Extensible notification system
-  - Scalable architecture
+  - Rate Limiting & Security: Implement rate limiting with express-rate-limit to prevent abuse. Use helmet for security best practices.
+  - Caching: Utilize Redis for session storage and improving ride-search performance.
+  - WebSockets: Use Socket.IO for real-time ride status updates (e.g., when a driver accepts a ride).
 
 ## Main Features
 
-- User Authentication (Riders & Drivers)
-- Ride Booking System
-- Real Time Ride/Status Tracking
-- Dynamic Pricing
-- Driver Management
-- Ride History
+- **Ride Management**
+  - Real-time ride booking [ Booking Management (CRUD Operations) ]
+    ** Create, update, delete, and retrieve ride bookings
+    ** Implement ride status updates (e.g., pending, ongoing, completed)
+  - Dynamic pricing based on demand [ Dynamic Pricing System ]
+    ** Implement price calculation based on factors like distance & demand
+    ** Store price history for analytics
+  - Comprehensive ride status tracking [ Notifications ]
+    - Integrate email notifications using Nodemailer
+  - Ride history
 
 ## 🛠️ Tech Stack
 

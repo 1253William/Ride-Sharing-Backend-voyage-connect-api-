@@ -20,7 +20,6 @@ bin-release/
 # Node.js
 node_modules/
 package-lock.json
-package.json
 npm-debug.log
 yarn-debug.log*
 yarn-error.log*

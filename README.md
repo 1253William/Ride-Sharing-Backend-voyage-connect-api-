@@ -28,8 +28,7 @@ Voyage-Connect is a real-world simulation of a modern, scalable Node.js/Express 
 ## 🛠️ Tech Stack
 
 - Node.js & Express
-- Postgresql
-- Prisma
+- MongoDB
 - JSON Web Tokens (JWT)
 - Swagger/OpenAPI
 - Docker support
